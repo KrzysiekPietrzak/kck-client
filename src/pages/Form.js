@@ -81,14 +81,29 @@ function App(){
 
 
     })
-})
-setNameSurname(''),
-setAbstract(''),
-setAffiliation(''),
-setEmail(''),
-setTitle(''),
-setPhone('')
-return 0
+}
+)
+const box2 = Array.from(document.querySelectorAll('.app2'))
+
+        for (let i = 0; i < box2.length; i++) {
+
+
+            box2[i].style.display='none'
+
+
+
+        }
+
+const box = Array.from(document.querySelectorAll('.app'))
+ 
+for (let i = 0; i < box.length; i++) {
+
+
+    box[i].style.display="block"
+
+
+
+}
 
 }
 
@@ -124,6 +139,10 @@ return 0
 
 
             <div className="App">
+                <div className="app" style={{display:"none"}}>
+                    <h1>Zgłoszenie wysłane!</h1>
+                </div>
+                <div className="app2">
      <h1>Dodaj swoje wystąpienie</h1>
      <form onSubmit={newOffer}>
       <label> {names[9]}</label>
@@ -187,7 +206,7 @@ return 0
      </form>
     </div>
 
-
+    </div>
 </div>
         </div>
     )
