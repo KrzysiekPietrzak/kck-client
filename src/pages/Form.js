@@ -88,6 +88,8 @@ setAffiliation(''),
 setEmail(''),
 setTitle(''),
 setPhone('')
+return 0
+
 }
 
     return (
