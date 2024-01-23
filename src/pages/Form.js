@@ -81,7 +81,14 @@ function App(){
 
 
     })
-})}
+})
+setNameSurname(''),
+setAbstract(''),
+setAffiliation(''),
+setEmail(''),
+setTitle(''),
+setPhone('')
+}
 
     return (
         <div >
