@@ -5,8 +5,8 @@ import React, { useState } from "react"
 function App(){
 
 
-    const namesPL = ["Misja", "Uczestnicy", "Patronaty", "Komitet Organizacyjny", "Informacje Użytkowe", " Kontakt", " Formularz", "KONFERENCJA NAUKOWA", "CZY ZAWODY UI/UX TO ZAWODY PRZYSZŁOŚCI?","Imię i nazwisko","Afiliacja","Tytuł","Abstrakt","Telefon","Dodaj ofertę"]
-    const namesEN = ["Mission", "Guests", "Patrons", "Committee", "Info", "Contact", "Form", "SCIENTIFIC CONFERENCE", "ARE UI/UX JOBS OF THE FUTURE?","Name and surname","Affiliation","Title","Abstract","Phone","Add Offert"]
+    const namesPL = ["Misja", "Uczestnicy", "Patronaty", "Komitet Organizacyjny", "Informacje Użytkowe", " Kontakt", " Formularz", "KONFERENCJA NAUKOWA", "CZY ZAWODY UI/UX TO ZAWODY PRZYSZŁOŚCI?","Imię i nazwisko","Afiliacja","Tytuł","Abstrakt","Telefon","Dodaj ofertę","Zgłoszenie Wysłane!"]
+    const namesEN = ["Mission", "Guests", "Patrons", "Committee", "Info", "Contact", "Form", "SCIENTIFIC CONFERENCE", "ARE UI/UX JOBS OF THE FUTURE?","Name and surname","Affiliation","Title","Abstract","Phone","Add Offert","Application sent!"]
     const [isPL, setIsPL] = useState(true)
     const [names, setNames] = useState(namesPL)
 
@@ -138,9 +138,9 @@ for (let i = 0; i < box.length; i++) {
             </div>
 
 
-            <div className="App">
+            <div >
                 <div className="app" style={{display:"none"}}>
-                    <h1>Zgłoszenie wysłane!</h1>
+                    <h1> {names[15]}</h1>
                 </div>
                 <div className="app2">
      <h1>Dodaj swoje wystąpienie</h1>
